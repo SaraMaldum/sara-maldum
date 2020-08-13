@@ -13,44 +13,49 @@ import Resume from '../../resume/Resume';
 import About from '../../about/About';
 import logo from '../../../images/smLogo.png';
 import styled from 'styled-components';
-import Heading1 from '../../layout/headings/Heading1';
-import Sara from '../../../images/smaldum.png'
 
 //Styles components
 const StyledNavbar = styled(Navbar)`   
-        background-image: linear-gradient(-45deg, #10CCAC, #720073);
-        background-size: 400% 400%;
-        animation: gradient 10s ease infinite;
-        position: relative;
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
+    filter: drop-shadow(5px 5px 5px rgba(48,46,52,0.5));
+    background-image: linear-gradient(-45deg, #10CCAC, #720073);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    position: relative;
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
         }
-        height: 200px;
-        border-radius: 0;
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    height: 200px;
+    border-radius: 0;
 `
 
 const StyledLink = styled(NavLink)`
-    color: white;
+    color: ${function (props) {
+        return props.theme.colors.white;
+    }};
     padding: 10px;
     text-transform: uppercase;
-    
+    border-bottom: 1px solid white;
+
     &:hover {
         text-decoration: none;
-        color: white;
+        color: ${function (props) {
+        return props.theme.colors.white;
+    }};
         font-weight: bold;
     }
 `;
 
 const style = {
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    borderBottom: '3px solid white',
 }
 
 const Logo = styled.img`
@@ -62,7 +67,7 @@ const Logo = styled.img`
 function NavBar() {
     return (
         <Router>
-            <StyledNavbar variant="light" expand="lg">
+            <StyledNavbar variant="dark" expand="lg">
                 <NavLink to="/">
                     <Navbar.Brand><Logo src={logo} alt="logo" /></Navbar.Brand>
                 </NavLink>
@@ -83,7 +88,6 @@ function NavBar() {
                         </StyledLink>
                     </Nav>
                 </Navbar.Collapse>
-                <Heading1>Sara Maldum</Heading1>
             </StyledNavbar>
             <Switch>
                 <Route path="/" exact component={Home} />

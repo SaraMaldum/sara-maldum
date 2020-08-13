@@ -5,6 +5,6 @@ export default {
         purple: '#720073',
         hoverGreen: '#B9EFEA',
         darkPurple: '#2D0431',
-        gray: '#302E34',
+        gray: '#302E34'
     }
 }

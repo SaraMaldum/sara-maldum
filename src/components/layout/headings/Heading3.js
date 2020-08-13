@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
-const Heading1 = styled.h1`
+const Heading3 = styled.h3`
 color: ${function ( props ) {
     return props.theme.colors.darkPurple;
     }};
-    margin: 40px 0 10px 0;
     text-align: center;
 `
 
-export default Heading1; 
+export default Heading3;

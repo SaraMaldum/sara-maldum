@@ -2,35 +2,44 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
-    color: white;
-    font-weight: bold;
+    
+    color: ${function (props) {
+        return props.theme.colors.white;
+    }};
     background-color: #2D0431;
     padding: 10px;
     border-radius: 0;
     display: flex;
-    margin-top: auto;
     justify-content: center;
     flex-shrink: 0;
+    padding: 20px;
 `;
 
 const A = styled.a`
-    color: white;
-    padding: 10px;
+    color: ${function (props) {
+        return props.theme.colors.white;
+    }};
+    padding-right: 20px;
+    margin-bottom: 10px;
 
     &:hover {
-        color: white;
+        color: ${function (props) {
+        return props.theme.colors.white;
+    }};
         text-decoration: none;
-        font-style: italic;
+        font-weight: bold;
     }
 `
 
 function Footer() {
-    return(
+    return (
+        <>
         <StyledFooter>
-            <A href="mailto: saramaldum@hotmail.com" className="footer__link">E: sara.maldum@gmail.com</A>
-            <A href="tel:+4794031832" className="footer__link">T: +47 94 03 18 32</A>
-            <p className="footer__copyright">&copy; Sara Maldum</p>
+            <A href="mailto: saramaldum@hotmail.com">Email: sara.maldum@gmail.com</A>
+            <A href="tel:+4794031832">Phone: +47 94 03 18 32</A>
+            <p>&copy; Sara Maldum</p>
         </StyledFooter>
+    </>
     )
 }
 
