@@ -34,12 +34,12 @@ const A = styled.a`
 function Footer() {
     return (
         <>
-        <StyledFooter>
-            <A href="mailto: saramaldum@hotmail.com">Email: sara.maldum@gmail.com</A>
-            <A href="tel:+4794031832">Phone: +47 94 03 18 32</A>
-            <p>&copy; Sara Maldum</p>
-        </StyledFooter>
-    </>
+            <StyledFooter>
+                <A href="mailto: saramaldum@hotmail.com">Email: sara.maldum@gmail.com</A>
+                <A href="tel:+4794031832">Phone: +47 94 03 18 32</A>
+                <p>&copy; Sara Maldum</p>
+            </StyledFooter>
+        </>
     )
 }
 

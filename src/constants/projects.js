@@ -1,4 +1,4 @@
-[
+export default [
     {
        "name":"Game of Thrones",
        "assignment":"Boardgame",
