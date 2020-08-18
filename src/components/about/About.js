@@ -7,7 +7,7 @@ function About() {
     return (
         <>
             <div className="container">
-                <Heading2>Who am I?</Heading2>'
+                <Heading2>Who am I?</Heading2>
                 <Info>I love learning new things, developing my own knowledge and challenge my self. I find it rewarding to help, work and understand new people. And likewise with programming. Some things you don't understand at first, but if you really open up and spend some time to get to know them, eventually you'll love them. And others you connect with instantly.</Info>
                 <Info>I know I have a long way to go, as I don't have that much previous experience because I've mainly worked in customer service and sales. But I believe that my experience combined with my bachelors in marketing will help me understand the customer better. I have the passion, curiostiy and willingness to learn.</Info>
 

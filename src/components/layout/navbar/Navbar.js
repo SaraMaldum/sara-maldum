@@ -40,7 +40,7 @@ const StyledLink = styled(NavLink)`
     color: ${function (props) {
         return props.theme.colors.white;
     }};
-    padding: 10px;
+    padding: 10px 15px;
     text-transform: uppercase;
     border-bottom: 1px solid white;
 
@@ -69,6 +69,8 @@ const NavbarTxt = styled.p`
         return props.theme.colors.white;
     }};
     margin-top: 70px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
 ` 
 //Navbar function
 function NavBar() {
