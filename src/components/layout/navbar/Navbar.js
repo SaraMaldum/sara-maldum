@@ -63,6 +63,13 @@ const Logo = styled.img`
     margin-top: 10px;
 `
 
+const NavbarTxt = styled.p`
+    text-align: center;
+    color: ${function (props) {
+        return props.theme.colors.white;
+    }};
+    margin-top: 70px;
+` 
 //Navbar function
 function NavBar() {
     return (
@@ -71,7 +78,7 @@ function NavBar() {
                 <NavLink to="/">
                     <Navbar.Brand><Logo src={logo} alt="logo" /></Navbar.Brand>
                 </NavLink>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
                         <StyledLink to="/" activeStyle={style} exact>
@@ -88,6 +95,7 @@ function NavBar() {
                         </StyledLink>
                     </Nav>
                 </Navbar.Collapse>
+            <NavbarTxt>Hi there, I'm Sara Maldum, a front-end development student. Always looking learn something new!</NavbarTxt>
             </StyledNavbar>
             <Switch>
                 <Route path="/" exact component={Home} />

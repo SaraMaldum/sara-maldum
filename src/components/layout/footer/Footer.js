@@ -1,26 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
+//Styled components
 const StyledFooter = styled.footer`
     
     color: ${function (props) {
         return props.theme.colors.white;
     }};
     background-color: #2D0431;
-    padding: 10px;
-    border-radius: 0;
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     flex-shrink: 0;
-    padding: 20px;
 `;
 
 const A = styled.a`
     color: ${function (props) {
         return props.theme.colors.white;
     }};
-    padding-right: 20px;
-    margin-bottom: 10px;
 
     &:hover {
         color: ${function (props) {
@@ -31,13 +29,32 @@ const A = styled.a`
     }
 `
 
+const ListItem = styled.li `
+    list-style-type: none;
+    text-align: center;
+    padding-top: 5px;
+
+    &.copy {
+        margin-top: 15px;
+    }
+`
+
+//Footer function
 function Footer() {
     return (
         <>
             <StyledFooter>
-                <A href="mailto: saramaldum@hotmail.com">Email: sara.maldum@gmail.com</A>
-                <A href="tel:+4794031832">Phone: +47 94 03 18 32</A>
-                <p>&copy; Sara Maldum</p>
+                <ul>
+                    <ListItem>
+                        <A href="mailto: saramaldum@hotmail.com">Email: sara.maldum@gmail.com</A>
+                    </ListItem>
+                    <ListItem>
+                        <A href="tel:+4794031832">Phone: +47 94 03 18 32</A>
+                    </ListItem>
+                    <ListItem className="copy">
+                        &copy; Sara Maldum
+                    </ListItem>
+                </ul>
             </StyledFooter>
         </>
     )
