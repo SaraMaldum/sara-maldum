@@ -42,6 +42,7 @@ const StyledLink = styled(NavLink)`
     padding: 10px 15px;
     text-transform: uppercase;
     border-bottom: 1px solid white;
+    
     &:hover {
         text-decoration: none;
         color: ${({ theme }) => theme.colors.hoverGreen};
@@ -57,6 +58,12 @@ const style = {
 
 const Logo = styled.img`
     width: 100px;
+
+    &:hover {
+        width: 106px;
+        transition: .3s;
+        filter: drop-shadow(5px 5px 5px #302E34); 
+    }
 `
 
 //Navbar function

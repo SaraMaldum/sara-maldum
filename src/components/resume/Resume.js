@@ -23,9 +23,7 @@ function Resume() {
         <>
             <Container>
             <Btn />
-
             <Heading1>Resumé</Heading1>
-
                 <Row>
                     <Col sm={4}>
                         <Heading2>Skills</Heading2>
