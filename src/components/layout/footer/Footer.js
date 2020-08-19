@@ -4,10 +4,7 @@ import styled from 'styled-components';
 
 //Styled components
 const StyledFooter = styled.footer`
-    
-    color: ${function (props) {
-        return props.theme.colors.white;
-    }};
+    color: ${({theme}) => theme.colors.white};
     background-color: #2D0431;
     padding-top: 10px;
     display: flex;
@@ -16,20 +13,16 @@ const StyledFooter = styled.footer`
 `;
 
 const A = styled.a`
-    color: ${function (props) {
-        return props.theme.colors.white;
-    }};
+    color: ${({ theme }) => theme.colors.white};
 
     &:hover {
-        color: ${function (props) {
-        return props.theme.colors.white;
-    }};
+        color: ${({ theme }) => theme.colors.hoverGreen};
         text-decoration: none;
         font-weight: bold;
     }
 `
 
-const ListItem = styled.li `
+const ListItem = styled.li`
     list-style-type: none;
     text-align: center;
     padding-top: 5px;

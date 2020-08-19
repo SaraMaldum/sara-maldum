@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 
 const Heading1 = styled.h1`
-    color: ${function (props) {
-        return props.theme.colors.darkPurple;
-    }};
-    margin: 40px;
-    text-align: center;
+    color: ${({theme}) => theme.colors.darkPurple};
+    margin: 10px;
     border-bottom: 2px solid #2D0431;
 `
 

@@ -10,6 +10,8 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Josefin Slab', serif;
         font-weight: bold;
         text-transform: uppercase;
+        margin: 20px 0;
+        text-align: center;
     }
 `;
 
