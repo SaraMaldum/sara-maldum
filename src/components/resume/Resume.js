@@ -1,6 +1,7 @@
 import React from 'react';
 import Heading1 from '../layout/headings/Heading1';
 import Heading2 from '../layout/headings/Heading2';
+import Heading3 from '../layout/headings/Heading3';
 import styled from 'styled-components';
 
 const ResumeList = styled.div`
@@ -8,7 +9,6 @@ const ResumeList = styled.div`
         border-left: 2px solid #2D0431;
         margin-bottom: 20px;
     }
-
 `
 
 function Resume() {
@@ -27,6 +27,7 @@ function Resume() {
                         <li>SCSS/SASS</li>
                         <li>Bootstrap</li>
                         <li>BEM Methodology</li>
+                        <li>React</li>
                         <li>Adobe XD</li>
                         <li>Adobe Photoshop</li>
                         <li>Adobe Illustrator</li>
@@ -41,14 +42,14 @@ function Resume() {
                 </div>
                 <ResumeList className="col-sm-8 resumeList">
                     <div>
-                        <h3>Noroff - school of technology and digital media</h3>
+                        <Heading3>Noroff - school of technology and digital media</Heading3>
                         <p className="year">Front-end development - 2018-2020</p>
                         <p className="resumeInfo">Two year study, where I've learned and will learn about how visual
                         design meets coding,
                                 web and UX-design.</p>
                     </div>
                     <div>
-                        <h3>Markedshøyskolen</h3>
+                        <Heading3>Markedshøyskolen</Heading3>
                         <p className="year">Marketing - 2010-2013</p>
                         <p className="resumeInfo">Bachelors degree in marketing. This gave me a wide understanding of
                         the market and how
@@ -57,7 +58,7 @@ function Resume() {
                                 relations. </p>
                     </div>
                     <div>
-                        <h3>Bjertnes High School</h3>
+                        <Heading3>Bjertnes High School</Heading3>
                         <p className="year">General studies - 2007-2010</p>
                         <p className="resumeInfo">High school educations which gave me general study. </p>
                     </div>
@@ -68,7 +69,7 @@ function Resume() {
                 </div>
                 <ResumeList className="col-sm-8 resumeList">
                     <div>
-                        <h3>TNT Express</h3>
+                        <Heading3>TNT Express</Heading3>
                         <p className="year">Indoor sales - 2016-2017</p>
                         <p className="resumeInfo">My job was to contact existing costumers and maintain the relations
                         with them, but also
@@ -77,21 +78,21 @@ function Resume() {
                             </p>
                     </div>
                     <div>
-                        <h3>TNT Express</h3>
+                        <Heading3>TNT Express</Heading3>
                         <p className="year">Customer Service - 2014-2016</p>
                         <p className="resumeInfo">I answered the phone and email that customers sent. I also booked
                         import and export of
                                 packages, these inquiries was made over phone, email og TNT's booking systems. </p>
                     </div>
                     <div>
-                        <h3>XXL Sport&Villmark</h3>
+                        <Heading3>XXL Sport&Villmark</Heading3>
                         <p className="year">Customer Service</p>
                         <p className="resumeInfo">I answered inquiries over email from customers, informed them of
                         delays and shortages. I
                                 always double checked that customer got refunded after return of products. </p>
                     </div>
                     <div>
-                        <h3>XXL Sport&Villmark</h3>
+                        <Heading3>XXL Sport&Villmark</Heading3>
                         <p className="year">Sales in shoes and textile department - 2012-2014</p>
                         <p className="resumeInfo">As a sales person I guided and helped customers to find correct shoes
                         to their needs, and
@@ -99,19 +100,19 @@ function Resume() {
                             </p>
                     </div>
                     <div>
-                        <h3>Norsk Resirk AS</h3>
+                        <Heading3>Norsk Resirk AS</Heading3>
                         <p className="year">Warehouse employee - 2012</p>
                         <p className="resumeInfo">As a warehouse employee I handled an industrial container-deposit.</p>
                     </div>
                     <div>
-                        <h3>Snask Storkiosk Nittedal</h3>
+                        <Heading3>Snask Storkiosk Nittedal</Heading3>
                         <p className="year">Sales - 2010-2012</p>
                         <p className="resumeInfo">I sold groceries, and "norsk tipping" and "Rikstoto". I opened and
                         closed the kiosk and
                                 worked both alone and as a team.</p>
                     </div>
                     <div>
-                        <h3>Peppes Pizza, dep. Nittedal</h3>
+                        <Heading3>Peppes Pizza, dep. Nittedal</Heading3>
                         <p className="year">Shift team leader and waitress - 2008-2010</p>
                         <p className="resumeInfo">I started as a waitress in the restaurant, and then I worked my way up
                         to having the

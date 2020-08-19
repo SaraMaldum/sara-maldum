@@ -22,8 +22,8 @@ const ProjImg = styled.img`
 function Portfolio() {
     return (
         <>
-            <Heading1>Portfolio</Heading1>
-            <div>
+            <div className="container">
+                <Heading1>Portfolio</Heading1>
                 <Heading2>School projects</Heading2>
                 {projects.map((project, index) =>
                     <div key={index} className="col-md-6">

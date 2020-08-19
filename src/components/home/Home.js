@@ -1,8 +1,6 @@
 import React from "react";
 import Info from '../layout/info/Infotxt';
-import {
-    Link
-} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Heading1 from '../layout/headings/Heading1';
 
 function Home() {

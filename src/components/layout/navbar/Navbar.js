@@ -6,7 +6,9 @@ import {
     Switch,
     Route,
     NavLink,
+    Link
 } from 'react-router-dom';
+import Button from "react-bootstrap/Button";
 import Home from '../../home/Home';
 import Portfolio from '../../portfolio/Portfolio';
 import Resume from '../../resume/Resume';
@@ -21,6 +23,9 @@ const StyledNavbar = styled(Navbar)`
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     position: relative;
+    text-align: center;
+    border-radius: 0;
+    min-height: 200px;
     @keyframes gradient {
         0% {
             background-position: 0% 50%;
@@ -32,8 +37,6 @@ const StyledNavbar = styled(Navbar)`
             background-position: 0% 50%;
         }
     }
-    height: 200px;
-    border-radius: 0;
 `
 
 const StyledLink = styled(NavLink)`
@@ -59,8 +62,7 @@ const style = {
 }
 
 const Logo = styled.img`
-    width: 90px;
-    margin-top: 10px;
+    width: 80px;
 `
 
 const NavbarTxt = styled.p`
@@ -68,10 +70,32 @@ const NavbarTxt = styled.p`
     color: ${function (props) {
         return props.theme.colors.white;
     }};
-    margin-top: 70px;
+    margin: 40px 0 20px 0;
     font-family: 'Josefin Slab', serif;
-    font-size: 20px;
-` 
+    font-size: 24px;
+`
+
+const Btn = styled(Link)`
+    color: ${function (props) {
+        return props.theme.colors.white;
+    }};
+    border: 1px solid $white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px rgba(255,255,255,.5);
+    width: 40%;
+    &:hover {
+        color: ${function (props) {
+        return props.theme.colors.darkPurple;
+    }};
+        text-decoration: none;
+        font-weight: bold;
+        transition: .3s;
+        background-color: rgba(255,255,255,.5);
+    } 
+`
 //Navbar function
 function NavBar() {
     return (
@@ -80,7 +104,7 @@ function NavBar() {
                 <NavLink to="/">
                     <Navbar.Brand><Logo src={logo} alt="logo" /></Navbar.Brand>
                 </NavLink>
-                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
                         <StyledLink to="/" activeStyle={style} exact>
@@ -97,7 +121,10 @@ function NavBar() {
                         </StyledLink>
                     </Nav>
                 </Navbar.Collapse>
-            <NavbarTxt>Hi there, I'm Sara Maldum, a front-end development student. Always looking learn something new!</NavbarTxt>
+                <div className="heading__info">
+                    <NavbarTxt>Interested, organized and eager to learn</NavbarTxt>
+                    <Btn to="/Portfolio">My projects</Btn>
+                </div>
             </StyledNavbar>
             <Switch>
                 <Route path="/" exact component={Home} />
