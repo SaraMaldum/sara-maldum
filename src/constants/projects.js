@@ -18,13 +18,13 @@ export default [
       "link": "http://frontendmaldum.com/design2/week3/index.html"
    },
    {
-      "name": "January Island Escapes",
+      "name": "Island Escapes",
       "assignment": "CSS frameworks",
       "image": "januaryesc.jpg",
       "link": "http://frontendmaldum.com/ca.css/index.html"
    },
    {
-      "name": "NASA, Space missions 2019",
+      "name": "NASA",
       "assignment": "Microsite for NASA",
       "image": "nasa.jpg",
       "link": "http://frontendmaldum.com/projexam.dev/home.html"
@@ -36,7 +36,7 @@ export default [
       "link": "http://frontendmaldum.com/portfolio/ixd_impr/home.html"
    },
    {
-      "name": "Community Science Museum",
+      "name": "Science Museum",
       "assignment": "Science museum for intelligent kids",
       "image": "comsci.jpg",
       "link": "http://frontendmaldum.com/portfolio/semproj_impr/home.html"

@@ -11,13 +11,12 @@ import styled from 'styled-components';
 
 const BgCol = styled(Col)`
     &.imgSara {
-    background-image: url(${Sara});
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-blend-mode: 50px;
-    background-size: 190px;
-}
-    
+        background-image: url(${Sara});
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-blend-mode: 50px;
+        background-size: 190px;
+    }  
 `
 
 function Home() {

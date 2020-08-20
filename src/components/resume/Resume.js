@@ -12,7 +12,17 @@ const ResumeList = styled(Col)`
     &.resumeList {
         border-left: 2px solid #2D0431;
         margin-bottom: 20px;
+    
+        @media (max-width: 768px) {
+            border-left: none;
+            border-top: 2px solid #2D0431;
+            margin: 0 20px;
+
+        }
+    
     }
+
+
 `
 const ResumeH3 = styled(Heading3)`
     text-align: left;
