@@ -102,7 +102,6 @@ function NavBar() {
                 <Route path="/about" exact component={About} />
             </Switch>
         </Router>
-
     )
 }
 

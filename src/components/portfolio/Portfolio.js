@@ -7,11 +7,12 @@ import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Btn from '../layout/button/ProjectButton';
 
 //Styled components
 const ProjImg = styled.img`
     width: 100%;
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
     box-shadow: 0px 0px 30px rgba(0,0,0,.4);
     filter: grayscale(100%);
     
@@ -26,6 +27,7 @@ function Portfolio() {
     return (
         <>
             <Container>
+                <Btn />
                 <Heading1>Portfolio</Heading1>
                 <Heading2>School projects</Heading2>
                 <Row>

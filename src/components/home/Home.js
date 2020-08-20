@@ -5,10 +5,12 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Btn from '../layout/button/ProjectButton';
-import StyledLink from '../layout/Link';
+import StyledLink from '../layout/link/Link';
 import Sara from '../../images/smaldum.png';
 import styled from 'styled-components';
 
+
+//Styled components
 const BgCol = styled(Col)`
     &.imgSara {
         background-image: url(${Sara});
@@ -18,7 +20,7 @@ const BgCol = styled(Col)`
         background-size: 190px;
     }  
 `
-
+//Function home page
 function Home() {
     return (
         <>

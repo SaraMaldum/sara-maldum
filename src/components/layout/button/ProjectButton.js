@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+//Styled component
 const Btn = styled(Link)`
     color: ${({theme}) => theme.colors.white};
     border: 3px solid #10CCAC;
@@ -28,6 +29,7 @@ const Btn = styled(Link)`
     } 
 `
 
+//Function of button
 function ProjectButton() {
     return( 
         <Btn to="/Portfolio" className="ml-auto">My projects</Btn>

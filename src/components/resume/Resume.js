@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Btn from '../layout/button/ProjectButton';
 
+//Styled components
 const ResumeList = styled(Col)`
     &.resumeList {
         border-left: 2px solid #2D0431;
@@ -17,23 +18,20 @@ const ResumeList = styled(Col)`
             border-left: none;
             border-top: 2px solid #2D0431;
             margin: 0 20px;
-
         }
-    
     }
-
-
 `
 const ResumeH3 = styled(Heading3)`
     text-align: left;
-` 
+`
 
+//Function of the resumé
 function Resume() {
     return (
         <>
             <Container>
-            <Btn />
-            <Heading1>Resumé</Heading1>
+                <Btn />
+                <Heading1>Resumé</Heading1>
                 <Row>
                     <Col sm={4}>
                         <Heading2>Skills</Heading2>

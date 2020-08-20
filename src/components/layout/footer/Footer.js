@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 //Styled components
 const StyledFooter = styled.footer`
-    color: ${({theme}) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.white};
     background-color: #2D0431;
     padding-top: 10px;
     display: flex;

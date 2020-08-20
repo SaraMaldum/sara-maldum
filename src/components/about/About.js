@@ -3,7 +3,7 @@ import Heading1 from '../layout/headings/Heading1';
 import Heading2 from '../layout/headings/Heading2';
 import Heading3 from '../layout/headings/Heading3';
 import Info from '../layout/info/Infotxt';
-import StyledLink from '../layout/Link';
+import StyledLink from '../layout/link/Link';
 import Container from 'react-bootstrap/Container';
 import Btn from '../layout/button/ProjectButton';
 
