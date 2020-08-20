@@ -42,12 +42,13 @@ const StyledLink = styled(NavLink)`
     padding: 10px 15px;
     text-transform: uppercase;
     border-bottom: 1px solid white;
-    
+
     &:hover {
         text-decoration: none;
         color: ${({ theme }) => theme.colors.hoverGreen};
         font-weight: bold;
-        border-bottom: 1px solid #B9EFEA;
+        transition: .3s;
+        filter: drop-shadow(2px 2px 2px #302E34); 
     }
 `;
 

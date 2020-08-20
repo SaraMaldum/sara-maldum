@@ -5,6 +5,8 @@ const GlobalStyle = createGlobalStyle`
         margin: 0 auto;
         font-family: 'Fira Sans', sans-serif;
         font-size: 14px;
+        
+        
     }
     h1, h2, h3 {
         font-family: 'Josefin Slab', serif;
