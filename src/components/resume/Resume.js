@@ -12,7 +12,7 @@ import Btn from '../layout/button/ProjectButton';
 const ResumeList = styled(Col)`
     &.resumeList {
         border-left: 2px solid #2D0431;
-        margin-bottom: 20px;
+        margin: 10px 0 20px 0;
     
         @media (max-width: 768px) {
             border-left: none;
@@ -24,7 +24,9 @@ const ResumeList = styled(Col)`
 const ResumeH3 = styled(Heading3)`
     text-align: left;
 `
-
+const StyledUL = styled.ul`
+    margin-top: 10px;
+` 
 //Function of the resumé
 function Resume() {
     return (
@@ -37,7 +39,7 @@ function Resume() {
                         <Heading2>Skills</Heading2>
                     </Col>
                     <ResumeList sm={8} className="resumeList">
-                        <ul>
+                        <StyledUL>
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
@@ -51,7 +53,7 @@ function Resume() {
                             <li>Team work</li>
                             <li>Customer service</li>
                             <li>Sales</li>
-                        </ul>
+                        </StyledUL>
                     </ResumeList>
 
                     <Col sm={4}>

@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         margin: 0 auto;
         font-family: 'Fira Sans', sans-serif;
+        color: ${({theme}) => theme.colors.darkPurple};
 
         @media (max-width: 768px) {
             font-size: 14px;
