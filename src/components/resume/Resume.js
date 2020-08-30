@@ -26,7 +26,7 @@ const ResumeH3 = styled(Heading3)`
 `
 const StyledUL = styled.ul`
     margin-top: 10px;
-` 
+`
 //Function of the resumé
 function Resume() {
     return (

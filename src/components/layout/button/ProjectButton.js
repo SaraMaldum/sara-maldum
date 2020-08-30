@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 //Styled component
 const Btn = styled(Link)`
-    color: ${({theme}) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.white};
     border: 3px solid #10CCAC;
     padding: 10px;
     border-radius: 10px;
@@ -15,15 +15,15 @@ const Btn = styled(Link)`
     text-transform: uppercase;
     justify-content: center;
     display: flex;
-    background-color: ${({theme}) => theme.colors.blueGreen};
+    background-color: ${({ theme }) => theme.colors.blueGreen};
     font-size: 18px;
     font-weight: bold;
 
     &:hover {
-        color: ${({theme}) => theme.colors.white};
+        color: ${({ theme }) => theme.colors.white};
         text-decoration: none;
         transition: .4s;
-        background-color: ${({theme}) => theme.colors.darkPurple};
+        background-color: ${({ theme }) => theme.colors.darkPurple};
         border: 3px solid #2D0431;
 
     } 
@@ -31,7 +31,7 @@ const Btn = styled(Link)`
 
 //Function of button
 function ProjectButton() {
-    return( 
+    return (
         <Btn to="/Portfolio" className="ml-auto">My projects</Btn>
     )
 }
