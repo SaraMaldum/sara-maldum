@@ -16,6 +16,8 @@ const GlobalStyle = createGlobalStyle`
         text-transform: uppercase;
         margin: 20px 0 10px 0;
         text-align: center;
+    text-shadow: 1px 1px 2px #302E34;
+
     }
 `;
 

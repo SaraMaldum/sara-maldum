@@ -23,7 +23,7 @@ const StyledNavbar = styled(Navbar)`
     animation: gradient 10s ease infinite;
     border-radius: 0;
     margin-bottom: 20px;
-    min-height: 80px;
+    min-height: 12vh;
     @keyframes gradient {
         0% {
             background-position: 0% 50%;
@@ -42,7 +42,7 @@ const StyledLink = styled(NavLink)`
     padding: 10px 15px;
     text-transform: uppercase;
     border-bottom: 1px solid white;
-
+    
     &:hover {
         text-decoration: none;
         color: ${({ theme }) => theme.colors.hoverGreen};

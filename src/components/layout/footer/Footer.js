@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import {HiOutlinePhone} from 'react-icons/hi';
+import {HiOutlineMail} from 'react-icons/hi';
 
 //Styled components
 const StyledFooter = styled.footer`
@@ -38,10 +40,10 @@ function Footer() {
             <StyledFooter>
                 <ul>
                     <ListItem>
-                        <A href="mailto: saramaldum@hotmail.com">Email: sara.maldum@gmail.com</A>
+                        <A href="mailto: saramaldum@hotmail.com"><HiOutlineMail /> sara.maldum@gmail.com</A>
                     </ListItem>
                     <ListItem>
-                        <A href="tel:+4794031832">Phone: +47 94 03 18 32</A>
+                        <A href="tel:+4794031832"><HiOutlinePhone /> +47 94 03 18 32</A>
                     </ListItem>
                     <ListItem className="copy">
                         &copy; Sara Maldum
