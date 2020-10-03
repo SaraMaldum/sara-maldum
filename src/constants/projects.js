@@ -1,5 +1,17 @@
 export default [
    {
+      "name": "New island escapes",
+      "assignment": "React project",
+      "image": "islandescapes.jpg",
+      "link": "http://saramaldum.com/islandescapes"
+   },
+   {
+      "name": "Games",
+      "assignment": "React project",
+      "image": "gamesplatform.jpg",
+      "link": "http://saramaldum.com/gamesplatform"
+   },
+   {
       "name": "Game of Thrones",
       "assignment": "Boardgame",
       "image": "got.jpg",
