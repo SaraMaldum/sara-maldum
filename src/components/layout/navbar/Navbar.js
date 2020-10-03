@@ -70,7 +70,7 @@ const Logo = styled.img`
 //Navbar function
 function NavBar() {
     return (
-        <Router>
+        <Router basename='/sara_maldum'>
             <StyledNavbar variant="dark" expand="lg">
                 <Container fluid>
                     <NavLink to="/">
