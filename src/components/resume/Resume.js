@@ -43,6 +43,7 @@ function Resume() {
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
+                            <li>GitHub</li>
                             <li>SCSS/SASS</li>
                             <li>Bootstrap</li>
                             <li>BEM Methodology</li>

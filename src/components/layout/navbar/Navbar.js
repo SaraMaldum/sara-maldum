@@ -82,13 +82,13 @@ function NavBar() {
                             <StyledLink to="/" activeStyle={style} exact>
                                 Home
                         </StyledLink>
-                            <StyledLink to="/portfolio/" activeStyle={style} >
+                            <StyledLink to="/portfolio" activeStyle={style} >
                                 Portfolio
                         </StyledLink>
-                            <StyledLink to="/resume/" activeStyle={style} >
+                            <StyledLink to="/resume" activeStyle={style} >
                                 Resumè
                         </StyledLink>
-                            <StyledLink to="/about/" activeStyle={style} >
+                            <StyledLink to="/about" activeStyle={style} >
                                 About me
                         </StyledLink>
                         </Nav>

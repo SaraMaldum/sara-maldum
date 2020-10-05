@@ -26,7 +26,7 @@ function About() {
 
                 <Heading3>Facts</Heading3>
                 <Info>I'm 28 years old, live in Jessheim, two kids, engaged to an army officer, two dogs (chihuahua and finnish lapdog), dancer, clumsy, organized.</Info>
-                <Info>Please take a look at my <StyledLink to="/Portfolio">school projects</StyledLink> to see my work, and my <StyledLink to="/Resume"> resumè </StyledLink>to see my skills list, education and work experience.</Info>
+                <Info>Please take a look at my <StyledLink to="/portfolio">school projects</StyledLink> to see my work, and my <StyledLink to="/resume"> resumè </StyledLink>to see my skills list, education and work experience.</Info>
                 <Info>If you have any questions or see that I can be a part of your team, please contact me by email or phone. I would love to hear from you!</Info>
             </Container>
         </>

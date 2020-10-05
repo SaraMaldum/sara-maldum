@@ -32,7 +32,7 @@ const Btn = styled(Link)`
 //Function of button
 function ProjectButton() {
     return (
-        <Btn to="/Portfolio" className="ml-auto">My projects</Btn>
+        <Btn to="/portfolio" className="ml-auto">My projects</Btn>
     )
 }
 

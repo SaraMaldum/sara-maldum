@@ -21,6 +21,16 @@ const ProjImg = styled.img`
         transition: .5s;
     }
 `
+const StyledLink = styled.a`
+    color: ${({ theme }) => theme.colors.purple};
+    font-weight: bold;
+
+    &:hover {
+        color: ${({ theme }) => theme.colors.purple};
+        font-style: italic;
+        text-decoration: none;
+    }
+` 
 
 //Function of the Portfolio site
 function Portfolio() {
@@ -29,6 +39,8 @@ function Portfolio() {
             <Container>
                 <Btn />
                 <Heading1>Portfolio</Heading1>
+                <Heading2>Github</Heading2>
+                    <StyledLink href="https://github.com/SaraMaldum">https://github.com/SaraMaldum</StyledLink>
                 <Heading2>School projects</Heading2>
                 <Row>
                     {projects.map((project, index) =>

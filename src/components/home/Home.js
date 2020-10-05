@@ -39,7 +39,7 @@ function Home() {
                     <BgCol md={4} className="imgSara">
                     </BgCol>
                 </Row>
-                <Info>Please take a look at my <StyledLink to="/Portfolio">school projects</StyledLink> to see my work, and my <StyledLink to="/Resume"> resumè </StyledLink>to see my skills list, education and work experience.</Info>
+                <Info>Please take a look at my <StyledLink to="/portfolio">school projects</StyledLink> to see my work, and my <StyledLink to="/resume"> resumè </StyledLink>to see my skills list, education and work experience.</Info>
 
                 <Info>If you have any questions or see that I can be a part of your team, please contact me by email or phone. I would love to hear from you!</Info>
             </Container>
